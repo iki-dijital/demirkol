@@ -1,0 +1,11 @@
+@use 'sass:map';
+
+$color_map: (
+    "primary": #955b45,
+    "secondary": #211945,
+    "dark": black,
+    "light": white
+);
+
+
+$final_list: ();
