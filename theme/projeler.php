@@ -22,7 +22,7 @@
             <div class="row">
                 <?php for ($i = 1; $i <= 4; $i++): ?>
                     <div class="col-lg-6">
-                        <a href="" class="listing_item text-black block mb-8">
+                        <a href="projedetay.php" class="listing_item text-black block mb-8">
                             <div class="img p-5.5 bg-white mb-10">
                                 <img src="<?= domain ?>assets/img/delete_project.webp" alt="Proje başlık" class="block w-full h-full object-cover object-center">
                             </div>

@@ -1,0 +1,17 @@
+#project-detail {
+  h2 {
+    &::before {
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 14px;
+      background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 1) 50%,
+        rgba(149, 91, 69, 1) 50%,
+        rgba(149, 91, 69, 1) 100%
+      );
+    }
+  }
+}

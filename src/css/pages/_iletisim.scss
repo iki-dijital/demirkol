@@ -1,0 +1,60 @@
+#contact-page {
+  padding-top: 220px;
+  &::before {
+    width: 200px;
+    height: 14px;
+    top: 150px;
+    left: var(--container-margin);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 50%,
+      rgba(149, 91, 69, 1) 50%,
+      rgba(149, 91, 69, 1) 100%
+    );
+  }
+  h2 {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .contact {
+    img {
+      filter: invert(1);
+    }
+  }
+}
+
+#directions {
+  @include get_transition(
+    (
+      color: 0.3s,
+    )
+  );
+  &:hover {
+    color: get-color(dark);
+  }
+}
+
+#map {
+  box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.35);
+}
+
+#contact-form {
+  background-color: #f3f3f3;
+  input {
+    border-width: 0 0 1px;
+    border-color: #373737;
+    @include edit_placeholder {
+      color: get-color(dark);
+      opacity: 1;
+    }
+  }
+  button {
+    border-radius: 8px;
+    box-shadow: 0px 3px 24px 0px rgba(177, 176, 176, 0.75);
+    @include get_transition((background-color: 0.3s));
+    &:hover{
+        background-color: get-color(dark);
+    }
+  }
+}

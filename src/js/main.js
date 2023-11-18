@@ -7,6 +7,7 @@ import {
 } from 'swiper/modules';
 import GLightbox from 'glightbox';
 
+
 /* ------ Ana Sayfa ------ */
 
 const bannerSwiperEl = document.getElementById('main-swiper');
@@ -97,3 +98,34 @@ homePageVideo &&
   });
 
 /* ------ End Ana Sayfa ------ */
+
+
+/* ------ Proje Detay ------ */
+
+const projectDetail = document.getElementById("project-detail");
+projectDetail && new GLightbox()
+
+/* ------ End Proje Detay ------ */
+
+/* ------ İletişim ------ */
+
+const directionsButton = document.getElementById('directions');
+
+function mapGo(mapLat, mapLong) {
+  if ((navigator.userAgentData.platform.indexOf("iPhone") !== -1)
+    || (navigator.userAgentData.platform.indexOf("iPod") !== -1)
+    || (navigator.userAgentData.platform.indexOf("iPad") !== -1)) {
+    window.open("maps://maps.google.com/maps?daddr=" + mapLat + "," + mapLong + "&amp;ll=");
+  } else {
+    window.open("http://maps.google.com/maps?daddr=" + mapLat + "," + mapLong + "&amp;ll=");
+  }
+}
+
+directionsButton?.addEventListener("click", function (e) {
+  let [lat,long] = directionsButton.dataset.coordinates.split(',');
+  mapGo(lat,long);
+  e.preventDefault();
+
+});
+
+/* ------ End İletişim ------ */

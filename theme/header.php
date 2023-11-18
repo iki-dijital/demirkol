@@ -66,11 +66,11 @@ include "components/svg-sprite.php";
                         </div>
                     </div>
                     <nav aria-label="Main menu" id="main-nav" class="flex items-center gap-x-8 font-semibold text-sm relative z-1">
-                        <a href="" class="text-white relative after-absolute py-6">ANASAYFA</a>
-                        <a href="" class="text-white relative after-absolute py-6">KURUMSAL</a>
-                        <a href="" class="text-white relative after-absolute py-6">YATIRIMLAR</a>
-                        <a href="" class="text-white relative after-absolute py-6">KABA İNŞAAT</a>
-                        <a href="" class="text-white py-6">İLETİŞİM</a>
+                        <a href="index.php" class="text-white relative after-absolute py-6">ANASAYFA</a>
+                        <a href="kurumsal.php" class="text-white relative after-absolute py-6">KURUMSAL</a>
+                        <a href="projeler.php" class="text-white relative after-absolute py-6">YATIRIMLAR</a>
+                        <a href="kabainsaat.php" class="text-white relative after-absolute py-6">KABA İNŞAAT</a>
+                        <a href="iletisim.php" class="text-white py-6">İLETİŞİM</a>
                     </nav>
 
                 </div>
