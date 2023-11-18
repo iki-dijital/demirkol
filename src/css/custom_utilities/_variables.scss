@@ -10,21 +10,19 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xxl: 1400px,
 );
 
 $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1140px,
-  xxl: 1170px,
+  xl: 1170px,
 );
 
 $grid-gutter: 30px;
 $number-of-col: 12;
 $is-mobile-first: false;
-$container-no-padding: false;
+$container-no-padding: true;
 
 $spacing-utilities: ();
 $spacer: 4px;
@@ -314,7 +312,7 @@ $utilities: (
       leading-tight: 1.25,
       leading-snug: 1.375,
       leading-normal: 1.5,
-      leading-relaxes: 1.625,
+      leading-relaxed: 1.625,
       leading-loose: 2,
     ),
   ),

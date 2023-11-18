@@ -1,3 +1,29 @@
 /*! purgecss start ignore */
 @import '../../../node_modules/swiper/swiper';
+
+@at-root {
+  :root {
+    --swiper-theme-color: #{get-color(primary)};
+    --swiper-pagination-color: var(--swiper-theme-color);
+    --swiper-pagination-left: 0;
+    --swiper-pagination-right: 0;
+    --swiper-pagination-bottom: 0;
+    --swiper-pagination-top: 0;
+    --swiper-pagination-fraction-color: inherit;
+    --swiper-pagination-progressbar-size: 4px;
+    --swiper-pagination-bullet-size: 8px;
+    --swiper-pagination-bullet-width: 30px;
+    --swiper-pagination-bullet-height: 4px;
+    --swiper-pagination-bullet-border-radius: 10px;
+    --swiper-pagination-bullet-inactive-color: #fff;
+    --swiper-pagination-bullet-inactive-opacity: 1;
+    --swiper-pagination-bullet-opacity: 1;
+    --swiper-pagination-bullet-horizontal-gap: 6.5px;
+    --swiper-pagination-bullet-vertical-gap: 13px;
+  }
+}
+
+@import '../../../node_modules/swiper/modules/effect-fade';
+@import '../../../node_modules/swiper/modules/navigation';
+@import '../../../node_modules/swiper/modules/pagination';
 /*! purgecss end ignore */

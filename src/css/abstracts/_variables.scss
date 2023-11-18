@@ -2,10 +2,15 @@
 
 $color_map: (
     "primary": #955b45,
-    "secondary": #211945,
-    "dark": black,
-    "light": white
+    "secondary": #c3572f,
+    "dark": #211945,
 );
 
+
+@at-root {
+    :root{
+        --header-height: 202px;
+    }
+}
 
 $final_list: ();

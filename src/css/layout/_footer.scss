@@ -1,0 +1,56 @@
+footer {
+  .social {
+    span {
+      font-size: 22px;
+    }
+    svg {
+      @include get_transition(
+        (
+          fill: 0.3s,
+        )
+      );
+    }
+    a {
+      &:hover {
+        svg {
+          fill: get-color(primary);
+        }
+      }
+    }
+  }
+  input {
+    outline: none;
+    @include edit_placeholder {
+      color: #000;
+      opacity: 1;
+    }
+  }
+  button {
+    font-size: 22px;
+    @include get_transition(
+      (
+        background-color: 0.3s,
+      )
+    );
+    &:hover {
+      background-color: get-color(secondary);
+    }
+  }
+  #policies {
+    a {
+      @include get_transition(
+        (
+          color: 0.3s,
+        )
+      );
+      &:hover {
+        color: get-color(secondary);
+      }
+    }
+  }
+  .copy {
+    strong {
+      color: #ffc600;
+    }
+  }
+}

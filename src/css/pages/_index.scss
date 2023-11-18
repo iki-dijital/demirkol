@@ -1,0 +1,250 @@
+#main-swiper {
+  .content {
+    margin-top: var(--header-height);
+    background-color: rgba(black, 0.65);
+    &::before {
+      background-color: rgba(black, 0.65);
+      right: 100%;
+      top: 0;
+      height: 100%;
+      width: 25%;
+    }
+  }
+  .nav-item {
+    svg {
+      @include get_transition(
+        (
+          fill: 0.3s,
+        )
+      );
+    }
+    &:hover {
+      svg {
+        fill: get-color(dark);
+      }
+    }
+    &.next {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+#main-services {
+  padding-top: 240px;
+  overflow-x: hidden;
+  .content {
+    &::before {
+      background-color: black;
+      width: calc(var(--container-margin) + var(--gutter-width) / 2);
+      right: 100%;
+      top: 0;
+      height: 100%;
+    }
+    & > * {
+      width: 80%;
+    }
+  }
+  h2 {
+    font-size: 40px;
+    &::after {
+      bottom: 0;
+      left: 0;
+      background-color: get-color(primary);
+      width: 47px;
+      height: 7px;
+    }
+  }
+  .swiper_nav {
+    svg {
+      @include get_transition(
+        (
+          fill: 0.3s,
+        )
+      );
+    }
+    & > div {
+      &:hover {
+        svg {
+          fill: get-color(dark);
+        }
+      }
+    }
+  }
+  .swiper-pagination-bullet {
+    @include get_transition(
+      (
+        width: 0.3s,
+        background-color: 0.3s,
+      )
+    );
+    &-active {
+      width: 67px;
+    }
+  }
+
+  .next {
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+  .swiper-slide {
+    opacity: 0;
+    aspect-ratio: 543/613;
+    @include get_transition(
+      (
+        opacity: 0.2s,
+      )
+    );
+    img {
+      box-shadow: 0px 0px 51px 0px rgba(177, 177, 177, 0.35);
+    }
+    &.swiper-slide-next,
+    &.swiper-slide-active {
+      opacity: 1;
+    }
+  }
+}
+
+#services-swiper {
+  &::before {
+    top: 52px;
+    bottom: 0;
+    left: calc(var(--gutter-width) * -1);
+    background-color: get-color(primary);
+    width: 230px;
+  }
+}
+
+#main-desc {
+  padding: 230px 0 180px;
+  h2 {
+    &::first-line {
+      font-weight: 800;
+    }
+    &::after {
+      bottom: 0;
+      left: 0;
+      background-color: #fff;
+      width: 47px;
+      height: 7px;
+    }
+  }
+  .content {
+    p {
+      margin: 0;
+      @include get_font(300, 14px, 1.6);
+    }
+  }
+}
+
+#main-news {
+  padding-top: 120px;
+  h2 {
+    font-size: 45px;
+    &::first-line {
+      font-size: 28px;
+      font-weight: 600;
+    }
+  }
+  .all-news {
+    @include get_transition(
+      (
+        color: 0.3s,
+      )
+    );
+    &::before {
+      bottom: 4px;
+      right: 100%;
+      width: 47px;
+      height: 7px;
+      background-color: get-color(primary);
+    }
+    &:hover {
+      color: get-color(primary);
+    }
+  }
+  .long {
+    img {
+      aspect-ratio: 270/308;
+    }
+  }
+  .short {
+    img {
+      aspect-ratio: 270/193;
+    }
+  }
+  :is(.long, .short) {
+    span {
+      @include get_transition(
+        (
+          color: 0.3s,
+        )
+      );
+      &::before {
+        top: 4px;
+        left: 0;
+        width: 32px;
+        height: 7px;
+        background-color: get-color(primary);
+      }
+    }
+    &:hover {
+      span {
+        color: get-color(primary);
+      }
+    }
+  }
+  .img {
+    aspect-ratio: 470/417;
+  }
+  .play {
+    border-width: 5px;
+    @include get_transition(
+      (
+        transform: 0.3s,
+      )
+    );
+    img {
+      filter: invert(1);
+    }
+  }
+  .video {
+    span {
+      font-size: 26px;
+      @include get_transition(
+        (
+          color: 0.3s,
+        )
+      );
+      strong {
+        font-weight: 800;
+      }
+      &::before {
+        background-color: get-color(primary);
+        width: 47px;
+        height: 7px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        @include get_transition(
+          (
+            background-color: 0.3s,
+          )
+        );
+      }
+    }
+    &:hover {
+      span {
+        color: get-color(dark);
+        &::before {
+          background-color: get-color(dark);
+        }
+      }
+      .play {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
