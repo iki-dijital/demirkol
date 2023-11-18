@@ -14,7 +14,7 @@ const postcssConfig = {
     }),
     purgecss({
       content: ['./theme/*.php', './theme/template/*.php', './theme/assets/js/*.js', './inc/*.php'],
-      safelist: ['swiper-pagination-bullet'],
+      safelist: ['swiper-pagination-bullet', 'swiper-pagination-bullet-active'],
       fontFace: false,
       keyframes: false,
       defaultExtractor: (content) =>

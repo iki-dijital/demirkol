@@ -127,7 +127,7 @@ include "header.php";
             <div class="row">
                 <div class="col-lg-6 flex justify-between items-end mb-8">
                     <h2 class="text-primary font-extrabold my-0">Demirkol Global <br> haberler </h2>
-                    <a href=""
+                    <a href="haberler.php"
                         class="all-news block relative before-absolute text-dark font-light pl-4 leading-none">Tüm
                         <strong class="font-semibold">haberler</strong></a>
                 </div>
@@ -138,14 +138,14 @@ include "header.php";
                         <!-- Diziye çektirip tekleri sola çiftleri sağa çektir -->
                         <div class="col-lg-6 flex flex-col justify-between">
                             <!-- Tekler buraya -->
-                            <a href="" class="mb-8 block long"> <!-- Long classına dikkat et -->
+                            <a href="haberdetay.php" class="mb-8 block long"> <!-- Long classına dikkat et -->
                                 <img src="<?= domain ?>assets/img/delete_news_1.webp" alt="Haber başlık"
                                     class="w-full object-cover object-center mb-5" loading="lazy">
                                 <span class="relative before-absolute pl-11 block text-black font-medium">
                                     Gayrimenkul alım-satımda profesyonel hizmet.
                                 </span>
                             </a>
-                            <a href="" class="mb-8 block short"> <!-- Short classına dikkat et -->
+                            <a href="haberdetay.php" class="mb-8 block short"> <!-- Short classına dikkat et -->
                                 <img src="<?= domain ?>assets/img/delete_news_2.webp" alt="Haber başlık"
                                     class="w-full object-cover object-center mb-5" loading="lazy">
                                 <span class="relative before-absolute pl-11 block text-black font-medium">
@@ -155,14 +155,14 @@ include "header.php";
                         </div>
                         <div class="col-lg-6 flex flex-col justify-between">
                             <!-- Çiftler buraya -->
-                            <a href="" class="mb-8 block short">
+                            <a href="haberdetay.php" class="mb-8 block short">
                                 <img src="<?= domain ?>assets/img/delete_news_3.webp" alt="Haber başlık"
                                     class="w-full object-cover object-center mb-5" loading="lazy">
                                 <span class="relative before-absolute pl-11 block text-black font-medium">
                                     Yeni projemizi tanıttık.
                                 </span>
                             </a>
-                            <a href="" class="mb-8 block long">
+                            <a href="haberdetay.php" class="mb-8 block long">
                                 <img src="<?= domain ?>assets/img/delete_news_4.webp" alt="Haber başlık"
                                     class="w-full object-cover object-center mb-5" loading="lazy">
                                 <span class="relative before-absolute pl-11 block text-black font-medium">
