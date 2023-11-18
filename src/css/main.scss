@@ -28,9 +28,12 @@
 @import 'layout/footer';
 @import 'layout/page-banner';
 @import 'layout/page-content';
+@import 'layout/listing.item';
 
 @import 'pages/index';
 @import 'pages/kurumsal';
+@import 'pages/projeler';
+@import 'pages/proje-detay';
 
 
 @media (prefers-reduced-motion: no-preference) {
