@@ -1,0 +1,15 @@
+.page-banner{
+    padding-top: var(--header-height);
+    min-height: 500px;
+    aspect-ratio: 1920/500;
+    .content{
+        &::before{
+            top: 0;
+            right: 0;
+            width: 125%;
+            height: 100%;
+            z-index: 0;
+            background-color: rgba(black, .65);
+        }
+    }
+}

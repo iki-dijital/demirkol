@@ -1,0 +1,17 @@
+#page-content {
+  padding: 120px 0;
+  &::before {
+    width: 200px;
+    height: 14px;
+    top: 70px;
+    left: var(--container-margin);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 50%,
+      rgba(149, 91, 69, 1) 50%,
+      rgba(149, 91, 69, 1) 100%
+    );
+  }
+}

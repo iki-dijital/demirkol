@@ -7,7 +7,7 @@ include "header.php";
             <div class="swiper-wrapper">
                 <?php for ($i = 1; $i <= 10; $i++): ?>
                     <div class="swiper-slide">
-                        <div style="background-image: url('<?= domain ?>assets/img/delete_slide_<?= $i % 2 + 1 ?>.webp')"
+                        <div style="background-image: url('<?= domain ?>assets/img/delete_slider_<?= rand(1, 2) ?>.webp')"
                             class="h-screen bg-cover bg-no-repeat bg-center">
                             <div class="container h-full">
                                 <div class="row h-full">
@@ -120,7 +120,8 @@ include "header.php";
         </div>
     </section>
     <section id="main-news" class="pb-22 bg-cover bg-center relative z-2">
-    <img src="<?=domain?>assets/img/main-news-bg.png" alt="Haberler" loading="lazy" class="absolute bottom-0 left-0 w-full">
+        <img src="<?= domain ?>assets/img/main-news-bg.png" alt="Haberler" loading="lazy"
+            class="absolute bottom-0 left-0 w-full pointer-events-none select-none">
 
         <div class="container relative z-1">
             <div class="row">
@@ -174,14 +175,19 @@ include "header.php";
                 <div class="col-lg-5 offset-lg-1" id="video_wrapper">
                     <a href="https://www.youtube.com/watch?v=WhWc3b3KhnY" class="video glightbox">
                         <div class="img relative overflow-hidden bg-black mb-9">
-                            <img src="<?=domain?>assets/img/delete_thumbnail.webp" alt="Video başlık" loading="lazy" class=" block w-full h-full object-cover object-center opacity-40">
+                            <img src="<?= domain ?>assets/img/delete_thumbnail.webp" alt="Video başlık" loading="lazy"
+                                class=" block w-full h-full object-cover object-center opacity-40">
                             <div class="overlay absolute top-0 left-0 w-full h-full flex justify-center items-center">
-                                <div class="play w-21 aspect-square flex items-center justify-center border-white border-solid rounded-full">
-                                    <img src="<?=domain?>assets/img/svg/youtube-play.svg" alt="Oynat" loading="lazy" class="block w-9">
+                                <div
+                                    class="play w-21 aspect-square flex items-center justify-center border-white border-solid rounded-full">
+                                    <img src="<?= domain ?>assets/img/svg/youtube-play.svg" alt="Oynat" loading="lazy"
+                                        class="block w-9">
                                 </div>
                             </div>
                         </div>
-                        <span class="text-primary block pl-16.5 relative before-absolute leading-none"><strong>Tanıtım</strong> filmi</span>
+                        <span
+                            class="text-primary block pl-16.5 relative before-absolute leading-none"><strong>Tanıtım</strong>
+                            filmi</span>
                     </a>
                 </div>
             </div>

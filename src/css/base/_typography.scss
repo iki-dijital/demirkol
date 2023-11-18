@@ -1,0 +1,19 @@
+.paragraph_text {
+  h2 {
+    margin: 0 0 25px;
+    color: get-color(primary);
+    @include get_font(600, 45px, 1.2);
+    &::first-line {
+      font-weight: 800;
+    }
+  }
+  p {
+    margin: 0;
+    color: #000;
+    @include get_font(300, 24px, 1.25);
+    strong,
+    b {
+      font-weight: 600;
+    }
+  }
+}

@@ -27,7 +27,7 @@ include "components/svg-sprite.php";
 
 <body>
 
-    <header class="header_lg absolute top-0 left-0 w-screen z-3 block md:hidden">
+    <header class="header_lg absolute top-0 left-0 w-screen z-4 block md:hidden">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 relative before-absolute bg-black pb-9.5 pt-16" id="header_left">
