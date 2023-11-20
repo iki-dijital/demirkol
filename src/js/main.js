@@ -25,7 +25,7 @@ bannerSwiperEl &&
       nextEl: '#main-swiper .next',
     },
     autoplay: {
-      delay: 5000,
+      delay: 2000,
     },
     on: {
       slideChange: function () {
@@ -57,6 +57,7 @@ mainServicesSwiperEl &&
   new Swiper(mainServicesSwiperEl, {
     modules: [Navigation, Pagination, Autoplay],
     slidesPerView: 1.2,
+    speed: 200,
     loop: true,
     pagination: {
       el: '#main-services .swiper-pag',
@@ -66,7 +67,7 @@ mainServicesSwiperEl &&
       prevEl: '#main-services .prev',
     },
     autoplay: {
-      delay: 5000,
+      delay: 2000,
     },
     on: {
       init: function () {
